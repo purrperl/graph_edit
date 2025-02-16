@@ -1,0 +1,53 @@
+
+ 
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Graph Editor</title>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.3/lib/p5.min.js"></script>
+    <script src="js/graph_editor.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quattrocento&display=swap" rel="stylesheet">
+ 
+ 
+    <style>
+      body {
+          font-family: "Quattrocento", serif;
+          color: white;
+          background-color: olive;
+      }
+ 
+      #instructions {
+          align: center;
+	  font-size: 30px;
+	  font-weight: bold;
+      }
+ 
+      #graph_text {
+          background-color: lightgray;
+      }
+ 
+    </style>
+  </head>
+  <body class="container-fluid">
+ 
+    <div id="graph_div" align="center">
+    </div>
+ 
+    <div align="center">
+      <textarea id="graph_text" rows="3" cols="100">
+      </textarea>
+    </div>
+ 
+    <div id="instructions">
+      <H2>Graph Editor</H2>
+      <OL>
+        <LI>To add a node: Click anywhere on the blank canvas.</LI>
+        <LI>To delete a node: Click a node to highlight it, then click it again.</LI>
+        <LI>To add/delete an edge: Click on a node to highlight it, then click another node to add/delete an edge between them.</LI>
+      </OL>
+    </div>
+  </body>
+</html>
+
